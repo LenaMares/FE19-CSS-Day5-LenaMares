@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+header {
+    padding: 50px;
+    width: 80%;
+    margin: 0 auto;
+
+    p {
+        text-align: center;
+        padding-bottom: 30px;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 15px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 6rem;
+        font-family: 'Tangerine', cursive;
+        font-weight: bold;
+        padding-bottom: 30px;
+
+       &::before {
+            content: '';
+            width: 30%;
+            border: 1px solid #000;
+            display: flex;
+            position: relative;
+            top: 50px;
+          }
+          &::after {
+            content: '';
+            width: 30%;
+            border: 1px solid #000;
+            display: flex;
+            position: relative;
+            top: -52px;
+            left: 70%;
+          }
+
+      }
+
+}
+
+footer {
+    padding-top: 100px;
+    margin-top: 100px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 40px;
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+  }
+
+main {
+
+    #elon {
+        position: relative;
+
+    img {
+        border-radius: 10px;
+        display: flex;
+        position: absolute;
+        top: 20px;
+        left: 10%;
+    }
+}
+
+.grid {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 20px;
+    /*position: relative;
+    top: 20px;
+    left: 45%;*/
+
+
+    .quote {
+        height: 180px;
+        width: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .one {
+    @extend .quote; 
+        background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/567256/elonmusk5-2x.jpg");
+    
+}
+
+    .two {
+        @extend .quote; 
+        background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/567219/elonmusk1-2x.jpg");
+    }
+    .three {
+        @extend .quote; 
+        background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/567244/elonmusk4-2x.jpg");
+
+}
+
+    .four {
+        @extend .quote; 
+        background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/1148046/elonmusk5-2x.jpg");
+    }
+
+    .five {
+        @extend .quote; 
+        background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/425636/elonmusk2-2x.jpg");
+    }
+    .six {
+        @extend .quote; 
+        background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/567245/elonmusk1.jpg");
+    }
+
+    .seven {
+        @extend .quote; 
+        background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/567290/elonmusk3-2x.jpg");
+    }
+
+    .eight {
+        @extend .quote; 
+        background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/567204/elonmusk5-2x.jpg");
+    }
+
+    .nine {
+        @extend .quote; 
+        background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/567204/elonmusk5-2x.jpg");
+    }
+
+    .ten {
+        @extend .quote; 
+        background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/567204/elonmusk5-2x.jpg");
+    }
+
+    .eleven {
+        @extend .quote; 
+        background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/567204/elonmusk5-2x.jpg");
+    }
+
+    .twelve {
+        @extend .quote; 
+        background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/567204/elonmusk5-2x.jpg");
+    }
+}
+}
+
+@media screen and (max-width: 1100px) {
+   header{
+    h1 {
+    &::before{
+        border: none;
+        }
+      &::after{
+        border: none;
+        }
+}
+   }
+}
+
+
+@media screen and (max-width: 650px) {
+    header {
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1630px) {
+    header{
+     h1 {
+     &::before{
+         border: none;
+         }
+       &::after{
+         border: none;
+         }
+ }
+    }
+
+    main {
+        .grid {
+            grid-template-columns: repeat(3, 200px);
+        }
+    }
+
+
+ }
+
+ @media screen and (max-width: 1500px) {
+    main {
+        .grid {
+            grid-template-columns: repeat(2, 200px);
+        }
+    }
+ }

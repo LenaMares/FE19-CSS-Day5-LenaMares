@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
+header {
+  padding: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+header p {
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+header h1 {
+  text-align: center;
+  font-size: 6rem;
+  font-family: "Tangerine", cursive;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+header h1::before {
+  content: "";
+  width: 30%;
+  border: 1px solid #000;
+  display: flex;
+  position: relative;
+  top: 50px;
+}
+header h1::after {
+  content: "";
+  width: 30%;
+  border: 1px solid #000;
+  display: flex;
+  position: relative;
+  top: -52px;
+  left: 70%;
+}
+
+footer {
+  padding-top: 100px;
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 40px;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+main #elon {
+  position: relative;
+}
+main #elon img {
+  border-radius: 10px;
+  display: flex;
+  position: absolute;
+  top: 20px;
+  left: 10%;
+}
+main .grid {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 20px;
+  /*position: relative;
+  top: 20px;
+  left: 45%;*/
+}
+main .grid .quote, main .grid .twelve, main .grid .eleven, main .grid .ten, main .grid .nine, main .grid .eight, main .grid .seven, main .grid .six, main .grid .five, main .grid .four, main .grid .three, main .grid .two, main .grid .one {
+  height: 180px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+main .grid .one {
+  background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/567256/elonmusk5-2x.jpg");
+}
+main .grid .two {
+  background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/567219/elonmusk1-2x.jpg");
+}
+main .grid .three {
+  background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/567244/elonmusk4-2x.jpg");
+}
+main .grid .four {
+  background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/1148046/elonmusk5-2x.jpg");
+}
+main .grid .five {
+  background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/425636/elonmusk2-2x.jpg");
+}
+main .grid .six {
+  background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/567245/elonmusk1.jpg");
+}
+main .grid .seven {
+  background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/567290/elonmusk3-2x.jpg");
+}
+main .grid .eight {
+  background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/567204/elonmusk5-2x.jpg");
+}
+main .grid .nine {
+  background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/567204/elonmusk5-2x.jpg");
+}
+main .grid .ten {
+  background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/567204/elonmusk5-2x.jpg");
+}
+main .grid .eleven {
+  background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/567204/elonmusk5-2x.jpg");
+}
+main .grid .twelve {
+  background-image: url("https://www.brainyquote.com/photos_tr/en/e/elonmusk/567204/elonmusk5-2x.jpg");
+}
+
+@media screen and (max-width: 1100px) {
+  header h1::before {
+    border: none;
+  }
+  header h1::after {
+    border: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1630px) {
+  header h1::before {
+    border: none;
+  }
+  header h1::after {
+    border: none;
+  }
+  main .grid {
+    grid-template-columns: repeat(3, 200px);
+  }
+}
+@media screen and (max-width: 1500px) {
+  main .grid {
+    grid-template-columns: repeat(2, 200px);
+  }
+}/*# sourceMappingURL=styles.css.map */
